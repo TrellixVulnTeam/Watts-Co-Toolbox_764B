@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="header">
+    <span style="top: 5px; position: relative">Items</span>
+    <div style="float: right;">
+      <button mat-button (click)="addRow()">(+) Add Item</button>
+    </div>
+  </div>
+  <ngx-datatable class="material" rowHeight="auto" headerHeight="50" [rows]="rows" [columns]="columns" 
+    [columnMode]="ColumnMode.force" [summaryRow]="true" [summaryPosition]="'bottom'">
+
+    <ngx-datatable-column name="Description">
+      <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+        <span title="Double click to edit" (dblclick)="editing[rowIndex + '-name'] = true"
+          *ngIf="!editing[rowIndex + '-name']">
+          {{ value }}
+        </span>
+        <input autofocus (blur)="updateValue($event, 'name', rowIndex)" *ngIf="editing[rowIndex + '-name']" type="text"
+          [value]="value" />
+      </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="Amount">
+      <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+        <span title="Double click to edit" (dblclick)="editing[rowIndex + '-name'] = true"
+          *ngIf="!editing[rowIndex + '-name']">
+          {{ value }}
+        </span>
+        <input autofocus (blur)="updateValue($event, 'name', rowIndex)" *ngIf="editing[rowIndex + '-name']" type="text"
+          [value]="value" />
+      </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="Actions">
+      <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+        <button mat-button (click)="editRow()"><mat-icon>edit</mat-icon></button>
+      </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable>
+</div>

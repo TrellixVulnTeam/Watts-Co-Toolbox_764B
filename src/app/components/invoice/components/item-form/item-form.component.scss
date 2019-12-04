@@ -1,0 +1,22 @@
+@import '~@swimlane/ngx-datatable/index.css';
+@import '~@swimlane/ngx-datatable/themes/material.scss';
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+
+.ngx-datatable {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    border-width: thin;
+    border-color: #EEE;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+.datatable-summary-row .datatable-body-row {
+    background-color: red;
+}

@@ -1,0 +1,27 @@
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+.mat-card {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+hr {
+    border-color: black;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.mat-datepicker-content .mat-calendar-next-button, .mat-datepicker-content .mat-calendar-previous-button, .mat-datepicker-toggle {
+    color: black;
+}
+
+.mat-button {
+    color: black;
+}

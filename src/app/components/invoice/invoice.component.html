@@ -36,7 +36,6 @@
     <input matInput placeholder="Postcode" [(ngModel)]="postcode">
   </mat-form-field>
   <hr>
-  <br />
   <!-- Item List -->
   <app-item-form></app-item-form>
   <!-- Notes -->
@@ -45,10 +44,10 @@
   </mat-form-field>
   <!-- Client Email -->
   <mat-form-field class="form" style="width: 95%">
-    <input matInput placeholder="Client Email Address" [(ngModel)]="clientEmail">
+    <input matInput placeholder="Client Email Address" [(ngModel)]="email">
   </mat-form-field>
   <!-- Controls -->
   <div class="controls">
-    <button mat-button (click)="createInvoice()">Create Invoice</button>
+    <button class="submit-button" mat-button (click)="createInvoice()">Create Invoice</button>
   </div>
 </mat-card>

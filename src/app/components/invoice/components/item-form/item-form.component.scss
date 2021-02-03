@@ -7,16 +7,49 @@
     width: 100%;
     background-color: white;
     color: black;
-}
-
-.container {
-    border-width: thin;
-    border-color: #EEE;
-    border-style: solid;
-    padding: 5px;
-    margin: 5px;
+    margin-bottom: 10px;
 }
 
 .datatable-summary-row .datatable-body-row {
     background-color: red;
+}
+
+.dataTable {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    .dataTable {
+        font-size: 10px;
+    }
+}
+
+.action-button {
+    width: 34px;
+    padding: 0;
+    min-width: 34px;
+    top: -6px;
+}
+
+.save-button {
+    background-color: blue;
+    color: white;
+}
+
+.column {
+    padding-left: 5px;
+}
+
+.add-row-button {
+    background-color: #7F2733;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.summary-text {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-top: 8px;
 }

@@ -25,3 +25,16 @@ hr {
 .mat-button {
     color: black;
 }
+
+.datatable-header-cell {
+    font-weight: bold;
+}
+
+.datatable-header-cell-label {
+    top: 3px;
+    position: absolute;
+}
+
+// .datatable-body-cell:focus {
+//     background-color: rgb(238, 238, 238);
+// }

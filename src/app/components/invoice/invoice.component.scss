@@ -6,6 +6,16 @@
     max-width: 70%;
 }
 
+@media screen and (max-width: 900px) {
+    .card {
+        position: relative;
+        top: 50px;
+        margin: auto;
+        padding: 24px;
+        max-width: 100%;
+    }
+}
+
 .subheader {
     margin-top: 8px;
 }
@@ -18,4 +28,9 @@
     margin-top: 16px;
     width: 100%;
     text-align: center;
+}
+
+.submit-button {
+    background-color: #7F2733;
+    color: white;
 }
